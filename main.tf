@@ -16,7 +16,7 @@ provider "digitalocean" {
 }
 
 module "kubernetes_cluster" {
-  source                     = "git::ssh://git@github.com/saidmasoud/terraform-digitalocean-kubernetes?ref=remove-provider"
+  source                     = "git::ssh://git@github.com/saidmasoud/terraform-digitalocean-kubernetes"
   do_token                   = chomp(data.local_file.token.content)
   do_region                  = var.do_region
   cluster_name               = var.cluster_name

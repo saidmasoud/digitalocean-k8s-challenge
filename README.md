@@ -9,7 +9,8 @@ The most challenging part of this exercise was getting `terraform` to work with 
 which I never used to this point. I decided to look for open-source terraform modules which easily created a DO k8s cluster;
 that led me to https://github.com/jaxxstorm/terraform-digitalocean-kubernetes, which hadn't been updated in nearly two years!
 Since I pulled the latest available version of terraform (1.1.1), I had to fork the provider and modify it to be compliant
-with Terraform's latest provider definition requirements (see https://github.com/saidmasoud/terraform-digitalocean-kubernetes/pull/1).
+with Terraform's latest provider definition requirements (see https://github.com/saidmasoud/terraform-digitalocean-kubernetes/pull/1,
+[also made the same change to the upsteram provider!](https://github.com/jaxxstorm/terraform-digitalocean-kubernetes/pull/4)).
 At that point, I was able to create a cluster, install vcluster, and create virtual clusters. Fun exercise!
 
 ## Prerequisites
